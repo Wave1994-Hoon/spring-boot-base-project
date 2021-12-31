@@ -4,12 +4,11 @@ import com.hooon.base.domain.account.dto.AccountDto;
 import com.hooon.base.domain.account.dto.SignUpDto;
 import com.hooon.base.domain.account.entity.Account;
 import com.hooon.base.domain.account.repository.AccountRepository;
+import com.hooon.base.global.error.exception.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import javax.persistence.EntityNotFoundException;
 import javax.validation.Valid;
 
 @Service
